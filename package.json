@@ -1,0 +1,24 @@
+{
+  "name": "in-memory-database",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katlyn75/in-memory-database.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katlyn75/in-memory-database/issues"
+  },
+  "homepage": "https://github.com/katlyn75/in-memory-database#readme",
+  "devDependencies": {
+    "es": "^0.6.0",
+    "lint": "^1.1.2",
+    "mocha": "^5.0.5"
+  }
+}
