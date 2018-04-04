@@ -5,7 +5,7 @@ const Store = require ('../lib/store');
 describe ('tests for store class', () => {
     
     const store = new Store();
-    let id;
+    //let id;
     
     it ('test to save to store', () => {
         const toSave = store.save({ favFood: 'tacos' });
@@ -20,8 +20,9 @@ describe ('tests for store class', () => {
         
     });
     it ('test to get id', () => {
-        const result = store.get(id);
-        assert.equal(result._id, id);
+        const toSave = store.save({ favFood: 'chocolate' });
+        const result = store.get(toSave._id);
+        assert.deepEqual(toSave, result);
     });
 
 });
