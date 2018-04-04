@@ -5,16 +5,16 @@ const Store = require ('../lib/store');
 describe ('tests for store class', () => {
     
     const store = new Store();
-    //let id;
+    // let id;
     
     it ('test to save to store', () => {
         const toSave = store.save({ favFood: 'tacos' });
-        id = toSave._id;
+        //let id = toSave._id;
         assert.ok(toSave._id);
         assert.equal(toSave.favFood, 'tacos');
     });
     it ('test to get all', () => {
-        const toSave = store.save({ favFood: 'chocolate' });
+        store.save({ favFood: 'chocolate' });
         const allData = store.getAll();
         assert.equal(allData.length, 2);
         
